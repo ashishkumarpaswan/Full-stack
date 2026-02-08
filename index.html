@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="alert('page loaded successfully')">
+    <h1>welcome to HTML DOM Manipulation</h1>
+    <hr>
+
+    <div class="section">
+        <h3>1. onclick() Event</h3>
+        <button onclick="alert('Button Clicked!')">Click Me</button>
+    </div>
+    <hr>
+
+    <div class="section">
+        <h3>2. onmouseover() Event && onmouseout event()</h3>
+        <p onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">
+            Move your mouse out of this text to see the color change.
+        </p>
+        <!--onchange() event triggerend -->
+        <div class="section">
+            <h3>3. onchange() Event</h3>
+            <select onchange="alert('Section Changed')">
+                <option value="">--select--</option>
+                <option value="">--option 1 selected--</option>
+                <option value="">--option 2 selected--</option>
+            </select>
+        </div>
+        <hr>
+        <!--onkeydown() event triggered-->
+        <div class="section">
+            <h3>onkeydown() Event</h3>
+            <input type="text" onkeydown="console.log('key pressed')" placeholder="Type something here..">
+        </div>
+        <hr>
+        <!--onsubmit() event triggered-->
+        <div class="section">
+            <h3>5. onsubmit() Event() </h3>
+            <form onsubmit="alert('Form Submitted Successfully!'); return false;">
+                <input type="text" placeholder="Enter your name" required>
+                <button type="submit" id="btn">Submit</button>
+            </form>
+        </div>
+        <hr>
+        <!--addEventListener() event triggered-->
+        <script>
+            document.getElementById("btn").addEventListener("click", function (){
+                alert("Button Clicked using addEventListener!");
+            });
+        </script>
+
+</body>
+
+</html>

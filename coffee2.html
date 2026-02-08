@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Story: Your Daily Dose of Caffeine</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Styles */
+        body {
+            background-color: #f5f0eb;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #3e2723;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #6f4e37;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffcc80;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffe0b2;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 80px 20px 40px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #5d4037;
+        }
+
+        /* Section Titles */
+        h2, h3 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            margin-top: 60px;
+            color: #6f4e37;
+        }
+
+        /* Text Styling */
+        .history-text {
+            font-size: 18px;
+            color: #4e342e;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        /* Images */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        /* Newsletter */
+        .Newsletter {
+            background-color: #6f4e37;
+            color: white;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 20px;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+        }
+
+        .Newsletter form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .Newsletter input,
+        .Newsletter select,
+        .Newsletter textarea,
+        .Newsletter button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 16px;
+        }
+
+        .Newsletter button {
+            background-color: #ffcc80;
+            color: #3e2723;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .Newsletter button:hover {
+            background-color: #ffe0b2;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #ffcc80;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffe0b2;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .history-text {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Welcome to Coffee Story</h1>
+        <p>Your Daily Dose of Caffeine</p>
+    </header>
+
+    <!-- History Section -->
+    <h2 id="history">History of Coffee</h2>
+    <p class="history-text">
+        Coffee was first discovered in Ethiopia by a goat herder named Kaldi, who noticed his goats became energetic after eating coffee berries. By the 15th century, it spread to Yemen and became popular in Sufi religious practices and public coffee houses.
+    </p>
+    <div class="image-container">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/041/643/200/small_2x/ai-generated-a-cup-of-coffee-and-a-piece-of-coffee-bean-perfect-for-food-and-beverage-related-designs-or-promoting-cozy-moments-png.png" alt="Cup of Coffee">
+        <p style="font-style: italic;">Image Source: <a href="https://www.vecteezy.com/free-png/coffee-cup" target="_blank">Vecteezy</a></p>
+    </div>
+
+    <!-- Rise of Coffee in Asia -->
+    <h2>Rise of Coffee Plantation in Asia</h2>
+    <p class="history-text">
+        In the 17th century, European colonizers introduced coffee to Asia, where countries like India, Indonesia, and Sri Lanka began cultivation. Today, Vietnam is one of the top producers, blending traditional tastes with modern coffee culture.
+    </p>
+    <div class="image-container">
+        <img src="https://www.cathaypacific.com/content/dam/focal-point/cx/inspiration/2024/06/DINING_Asian_Coffee_Culture-World_Map_Coffee-Tony_Leung-HERO.renditionimage.1700.850.jpg" alt="Coffee in Asia">
+    </div>
+
+    <!-- Coffee in the New World -->
+    <h2>Coffee Replaces Tea in the New World</h2>
+    <p class="history-text">
+        After the Boston Tea Party in 1773, drinking coffee became a patriotic act in America. Imports from the Caribbean and Latin America fueled its rise, making it the dominant drink in the United States.
+    </p>
+    <div class="image-container">
+        <img src="https://assets-global.website-files.com/649ca228b252a5d7627303d4/65454c8fa7b7108809195d06_3c4e30bf-0802-4d40-aa06-a7915fa05a5b.webp" alt="Coffee in the New World">
+    </div>
+
+    <!-- Newsletter -->
+    <h2 id="newsletter">Subscribe to Our Newsletter</h2>
+    <section class="Newsletter">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <select required>
+                <option value="">Select Your Preference</option>
+                <option value="coffee">Coffee</option>
+                <option value="tea">Tea</option>
+                <option value="news">News</option>
+            </select>
+            <textarea rows="4" placeholder="Your Thoughts..."></textarea>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CoffeeStory. All Rights Reserved.</p>
+        <p>
+            <a href="#about">About Us</a> |
+            <a href="#menu">Menu</a> |
+            <a href="#contact">Contact</a>
+        </p>
+    </footer>
+    
+
+</body>
+</html>
